@@ -5,10 +5,24 @@
   border-radius: 0 !important;
 }
 
+body {
+      background-color: white;
+      color: black;
+      position: relative;
+      overflow-x: hidden;
+}
+
 h1 {
   font-family: 'Amatic SC', "Courier New", Courier, monospace;
   color: black;
   text-align: center;
+}
+
+.main-image {
+  /* Preserve aspet ratio */
+  z-index: 999;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .navbar {
