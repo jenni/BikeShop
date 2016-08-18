@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>Nameofapp</title>
     <%= csrf_meta_tags %>
 
+		<link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
 
-  <body>
+  <body style="padding-top: 40px;"> <!-- so content won't get overlayed by the navbar --> 
 
-  <nav>
-  <ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Contact</li>
-  </ul>
-</nav>
+        <nav class="navbar navbar-inverse navbar-fixed" role="navigation">
+          <div class="navbar-header navbar-fixed-top">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div> <!-- END NAVBAR HEADER -->
+
+        <div class="logo navbar-brand">
+          <a href="#">⏄</a>
+        </div> <!--end projectName -->
+
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#index">HOME</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#more">MORE</a></li>
+          </ul>
+        </div> <!-- END NAVBAR COLLAPSE -->
+      </nav> <!-- END NAVBAR -->
 
     <%= yield %>
 
-<footer>
-  &copy; 2015 Bike Berlin
+<footer class="footer">
+      <div class="container">
+        <p class="text-muted center-block">&copy; 2015 Bikes Berlin</p>
+      </div>
 </footer>
 
   </body>
