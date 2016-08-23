@@ -119,3 +119,9 @@ p {
 }
 
 .footercr { margin-top: 20px;}
+
+#landing-img {
+    display: inline-block;      /* iframes are inline by default */
+    height: 100%;        /* Viewport-relative units */
+    width: 100%;
+}
