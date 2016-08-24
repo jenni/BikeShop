@@ -105,6 +105,24 @@ p {
   display: inline-block;
 }
 
+/** deleting arrows **/
+.right.carousel-control, .left.carousel-control {
+    opacity: 0;
+    filter:alpha(opacity=0); /* IE support */
+}
+
+.carousel {
+  /*z-index: 999;*/
+  text-align: center;
+}
+
+
+#landing-img {
+    display: inline-block; 
+    /* iframes are inline by default */
+}
+
+
 .footer {
   position: relative;
   bottom: 0;
@@ -133,8 +151,4 @@ p {
   margin-top: 20px;
 }
 
-#landing-img {
-    display: inline-block;      /* iframes are inline by default */
-  /* Viewport-relative units */
-    width: 100%;
-}
+
