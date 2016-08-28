@@ -5,6 +5,7 @@
   border-radius: 0 !important;
 }
 
+
 body {
   background-color: white;
   position: relative;
@@ -12,8 +13,7 @@ body {
   margin-top: 40px;
   font-family: "Times New Roman", Times, serif;
   font-size: 10px;
-  color: #333333;
-}
+} 
 
 
 h1 {
@@ -48,6 +48,7 @@ p {
 }
 
 .navbar {
+  display: inline-block;
  background-color: white;
  position: fixed;
  width: 100%; 
@@ -76,19 +77,33 @@ p {
 
 
 .navbar a:hover {
- color: black;
  text-decoration: none;
  display: inline-block;
 }
 
 .navbar ul li a {
- color: white;
  text-decoration: none;
  font-family: "Times New Roman", Times, serif;
  font-size: 11px;
  color: #333333;
  text-transform: uppercase;
 }
+
+
+.navbar-toggle { margin-right: 100px;
+background-color: black;
+}
+
+.icon-bar {
+   background-color:grey !important;
+}
+
+.navbar-header .navbar-toggle { 
+border: none; 
+background: white !important;
+}
+
+.navbar-header .navbar-toggle:hover { background: white; }
 
 
 
@@ -116,11 +131,13 @@ p {
   text-align: center;
 }
 
+#landing-img { 
 
-#landing-img {
-    display: inline-block; 
-    /* iframes are inline by default */
-}
+  display: inline-block;
+  min-width: 100%;
+  min-height: 100%;
+
+  }
 
 
 .footer {
@@ -133,6 +150,7 @@ p {
   font-family: "Courier New", Courier, monospace;
   font-size: 10px;
   text-align: center;
+  margin-bottom: 50px;
 } 
 
 /**
