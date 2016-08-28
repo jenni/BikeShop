@@ -42,11 +42,10 @@
 
         <div class="navbar-collapse collapse center">
           <ul class="nav navbar-nav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#products">PRODUCTS</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#more">MORE</a></li>
+            <li><%= link_to "home", 'static_pages/landing_page' %> </li>
+            <li><%= link_to "Products", products_path %></li>
+            <li> <%= link_to "About", '/static_pages/about' %> </li>
+            <li><%= link_to "Contact", '/static_pages/contact' %></li>
           </ul>
         </div> <!-- END NAVBAR COLLAPSE -->
       </nav> <!-- END NAVBAR -->
