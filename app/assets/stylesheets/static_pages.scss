@@ -40,6 +40,10 @@ p {
   text-transform: uppercase;
 }
 
+a:hover {
+    cursor: crosshair;
+}
+
 .main-image {
   /* Preserve aspet ratio */
   z-index: 999;
@@ -90,7 +94,8 @@ p {
 }
 
 
-.navbar-toggle { margin-right: 100px;
+.navbar-toggle { 
+margin-right: 100px;
 background-color: black;
 }
 
