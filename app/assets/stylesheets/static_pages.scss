@@ -5,6 +5,10 @@
   border-radius: 0 !important;
 }
 
+.wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 body {
   background-color: white;
@@ -52,9 +56,10 @@ a:hover {
 }
 
 .navbar {
+
   display: inline-block;
  background-color: white;
- position: fixed;
+ position: relative;
  width: 100%; 
  top: 0;
  z-index: 998;
@@ -142,6 +147,7 @@ background: white !important;
 .carousel {
   /*z-index: 999;*/
   text-align: center;
+  
 }
 
 
@@ -150,7 +156,6 @@ background: white !important;
   display: inline-block;
   min-width: 100%;
   min-height: 100%;
-
   }
 
 
@@ -172,5 +177,4 @@ background: white !important;
 .footercr { 
   margin-top: 20px;
 }
-
 
