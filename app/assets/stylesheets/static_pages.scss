@@ -65,6 +65,14 @@ a:hover {
  border: none;
 }
 
+.nav-search {margin-top:12px;}
+
+/*
+.button-s {
+  font-family: "Times New Roman";
+}
+*/
+
 .navbar .navbar-nav {
   float: right;
   vertical-align: top;
@@ -136,6 +144,7 @@ background: white !important;
   text-align: center;
 }
 
+
 #landing-img { 
 
   display: inline-block;
@@ -158,17 +167,7 @@ background: white !important;
   margin-bottom: 50px;
 } 
 
-/**
-.footer { 
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  bottom: 0;
-  background-color: #f5f5f5;
-  font-family: 'Times New Roman', "Courier New", Courier, monospace;
-  font-size: 12px;
-  text-align: center;
-  } **/
+
 
 .footercr { 
   margin-top: 20px;
