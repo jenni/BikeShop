@@ -147,13 +147,17 @@ background: white !important;
 .carousel {
   /*z-index: 999;*/
   text-align: center;
-  
+
 }
 
 
-#landing-img { 
 
-  display: inline-block;
+.carousel-inner { max-height: 510px;}
+
+
+
+#landing-img { 
+  text-align: center;
   min-width: 100%;
   min-height: 100%;
   }
