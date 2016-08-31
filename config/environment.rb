@@ -4,6 +4,7 @@ require_relative 'application'
 # Initialize the Rails application.
 Rails.application.initialize!
 
+# Sendgrid Plugin / send emails from heroku
 ActionMailer::Base.smtp_settings = {
   :address => 'smtp.sendgrid.net',
   :port => '587',
