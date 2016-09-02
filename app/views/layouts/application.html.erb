@@ -21,6 +21,19 @@
 
   <body data-spy="scroll" data-target=".navbar" class="wrap"> <!-- so content won't get overlayed by the navbar --> 
 
+    <div id="flash">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      setTimeout(function(){
+        $('#flash').remove();
+      }, 3000);
+    })
+</script>
+
 
         <nav class="navbar navbar-inverse navbar-fixed" role="navigation">
           <div class="navbar-header navbar-fixed-top">
@@ -33,13 +46,10 @@
           </button>
         </div> <!-- END NAVBAR HEADER -->
 
-        <div class="logo navbar-brand">
-          <a href="#">⏄</a>
-        </div> <!--end projectName -->
-
 
         <div class="navbar-collapse collapse center">
           <ul class="nav navbar-nav">
+          <li><a href="#">⏄</a></li>
             <li><%= link_to "home", root_url %> </li>
             <li><%= link_to "Products", products_path %></li>
             <li> <%= link_to "About", '/static_pages/about' %> </li>
@@ -50,6 +60,13 @@
                 <%= submit_tag("Go!", class: 'button-s') %>
               <% end %>
             </li>
+            <li class="hmenu">
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            <% else %>
+              <%= link_to('Login', new_user_session_path) %>
+            <% end %>
+          </li>
           </ul>
         </div> <!-- END NAVBAR COLLAPSE -->
       </nav> <!-- END NAVBAR -->
@@ -62,7 +79,9 @@
       </div>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
  </body>
 </html>
