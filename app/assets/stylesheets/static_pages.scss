@@ -19,11 +19,11 @@ body {
   font-size: 10px;
 } 
 
-.navbar-brand {display: inline-block;}
-
-.notice {color: #a1cee3;}
-.alert {color: #a1cee3;}
-
+.alert-info {
+  background-color: white;
+  border: none;
+  color: #a1cee3;
+}
 
 h1 {
   text-align: center;

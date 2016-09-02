@@ -20,19 +20,12 @@
 
 
   <body data-spy="scroll" data-target=".navbar" class="wrap"> <!-- so content won't get overlayed by the navbar --> 
-
-    <div id="flash">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-    </div>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-      setTimeout(function(){
-        $('#flash').remove();
-      }, 3000);
-    })
-</script>
+      <% if notice %>
+        <p id="notice" class="alert alert-info"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p id="alert" class="alert alert-info"><%= alert %></p>
+      <% end %>
 
 
         <nav class="navbar navbar-inverse navbar-fixed" role="navigation">

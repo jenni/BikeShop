@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p id="user">
+  <strong>First name:</strong>
+  <%= @user.first_name %>
+</p>
+
+<p id="user">
+  <strong>Last name:</strong>
+  <%= @user.last_name %>
+</p>
+
+<div class="col-sm-6 col-md-4">
+	<%= link_to 'Edit', edit_user_path(@user), class:"btn btn-default btn-xs" %> |
+	<%= link_to 'Back', users_path, class:"btn btn-default btn-xs" %>
+</div>
