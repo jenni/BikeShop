@@ -3,36 +3,49 @@
 <p id="notice"><%= notice %></p>
 
 	<div class="row">
-		<div class="col-md-3">
-		  <p>
-		  	<strong>Name:</strong>
-		  	<%= @product.name %>
-			</p>
-		</div>	
 
-		<div class="col-md-3">
-			<p>
-			  <strong>Description:</strong>
-			  <%= @product.description %>
-			</p>
-		</div>
-
-		<div class="col-md-3">
+		<div class="col-md-12">
 			<p>
 			  <strong>Image:</strong>
 			  <%= image_tag(@product.image_url, class: "img-responsive") if @product.image_url %>
 			</p>
 		</div>
 
+		<div class="col-md-12">
+			<p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+		</div>
 
-		<div class="col-md-3">
+		<div class="col-md-12">
+		  <p>
+		  	<strong>Name:</strong>
+		  	<%= @product.name %>
+			</p>
+		</div>	
+
+		<div class="col-md-12">
+			<p>
+			  <strong>Description:</strong>
+			  <%= @product.description %>
+			</p>
+		</div>
+
+
+		<div class="col-md-12">
 			<p>
 			  <strong>Price:</strong>
 			  <%= @product.price %> €
 			</p>
 		</div>
+
+		<div class="col-md-12">
+			<%= render partial:'new_comment' %>
+		</div>
+
+		<div class="col-md-12">
+			<%= render partial:'comments' %> 
+		</div>
 	
-	<div class="col-md-3">
+	<div class="col-md-12">
 		<p>
 			<%= link_to 'Edit', edit_product_path(@product) %> |
 	<%= link_to 'Back', products_path %>
