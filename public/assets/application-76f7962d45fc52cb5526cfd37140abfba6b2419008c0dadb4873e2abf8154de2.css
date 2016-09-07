@@ -1,0 +1,407 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 5, /Users/Jen/nameofapp/app/assets/stylesheets/products.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/* line 15, /Users/Jen/nameofapp/app/assets/stylesheets/products.scss */
+table {
+  margin: 30px;
+}
+
+/* line 19, /Users/Jen/nameofapp/app/assets/stylesheets/products.scss */
+p {
+  margin: 30px;
+}
+
+/* line 21, /Users/Jen/nameofapp/app/assets/stylesheets/products.scss */
+h1 {
+  padding: 10px;
+}
+
+/* line 23, /Users/Jen/nameofapp/app/assets/stylesheets/products.scss */
+.form {
+  padding: 20px;
+  text-align: center;
+  margin-top: -50px;
+}
+
+/* line 29, /Users/Jen/nameofapp/app/assets/stylesheets/products.scss */
+.col-xs-12 {
+  height: 500px;
+}
+
+/* line 31, /Users/Jen/nameofapp/app/assets/stylesheets/products.scss */
+.pages {
+  text-align: center;
+}
+/* line 1, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 16, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 46, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 51, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 55, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 61, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 69, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 80, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 86, /Users/Jen/nameofapp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 4, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+* {
+  border-radius: 0 !important;
+}
+
+/* line 8, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* line 13, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: white;
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+}
+
+/* line 22, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.alert-info {
+  background-color: white;
+  border: none;
+  color: #a1cee3;
+}
+
+/* line 28, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 11px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+/* line 36, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+h2 {
+  font-family: "Times New Roman", "Courier New", Courier, monospace;
+  color: black;
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+/* line 44, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+p {
+  font-family: "Times New Roman", "Courier New", Courier, monospace;
+  color: grey;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* line 52, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+a:hover {
+  cursor: crosshair;
+}
+
+/* line 56, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.main-image {
+  /* Preserve aspet ratio */
+  z-index: 999;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* line 63, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  display: inline-block;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  top: 0;
+  z-index: 998;
+  left: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  text-align: center;
+  border: none;
+}
+
+/* line 78, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.nav-search {
+  margin-top: 12px;
+}
+
+/*
+.button-s {
+  font-family: "Times New Roman";
+}
+*/
+/* line 86, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar .navbar-nav {
+  float: right;
+  vertical-align: top;
+  margin-right: 100px;
+}
+
+/* line 92, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/* line 96, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar a {
+  -webkit-transition: color 600ms;
+}
+
+/* line 101, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar a:hover {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* line 106, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar ul li a {
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 11px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+/* line 115, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-toggle {
+  margin-right: 100px;
+  background-color: black;
+}
+
+/* line 120, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.icon-bar {
+  background-color: grey !important;
+}
+
+/* line 124, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-header .navbar-toggle {
+  border: none;
+  background: white !important;
+}
+
+/* line 129, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-header .navbar-toggle:hover {
+  background: white;
+}
+
+/* line 133, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.logo a {
+  color: grey;
+  text-decoration: none;
+  -webkit-transition: color 600ms;
+  margin-left: 100px;
+}
+
+/* line 140, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.logo a:hover {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/** deleting arrows **/
+/* line 147, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.right.carousel-control, .left.carousel-control {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* IE support */
+}
+
+/* line 152, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel {
+  /*z-index: 999;*/
+  text-align: center;
+}
+
+/* line 160, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-inner {
+  max-height: 510px;
+}
+
+/* line 164, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+#landing-img {
+  text-align: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* line 171, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #f5f5f5;
+  color: grey;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 186, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
+.footercr {
+  margin-top: 20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
