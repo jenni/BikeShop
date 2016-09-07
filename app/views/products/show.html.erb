@@ -44,12 +44,11 @@
 		<div class="col-md-12">
 			<%= render partial:'comments' %> 
 		</div>
-	
+	<div class="pages"><%= will_paginate @comments %></div>
 	<div class="col-md-12">
 		<p>
 			<%= link_to 'Edit', edit_product_path(@product) %> |
 	<%= link_to 'Back', products_path %>
 		</p>
 	</div>
-
 </div>

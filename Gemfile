@@ -57,3 +57,5 @@ end
 gem 'devise'
 
 gem 'cancancan'
+
+gem 'will_paginate'
