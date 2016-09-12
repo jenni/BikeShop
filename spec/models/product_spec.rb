@@ -1,26 +1,29 @@
-require 'rails_helper'
+require 'rails_helper' 
 
 describe Product do
-	
-	context "when the product has comments" do
 
-		@product = Product.create!(name: "race bike")
-		@user = User.create!(email: "testing11@test.com", password: "password", first_name: "testing", last_name: "test")
-		@product.comments.create!(rating: 1, user: @user, body: "Bad")
-    @product.comments.create!(rating: 3, user: @user, body: "Good")
-    @product.comments.create!(rating: 5, user: @user, body: "Amazing!")
-    
+    context "when the product has comments" do # create context
+      before do # before running the test...
+        @product = Product.create!(:name => "race bike")
+        @user = User.create(:email => "123@123.com", :password => "12345678" )
+        @product.comments.create!(:rating => 1, :user => @user, :body => "Perfect!")
+        @product.comments.create!(:rating => 3, :user => @user, :body => "It´s okay")
+        @product.comments.create!(:rating => 5, :user => @user, :body => "Awful bike!")
+      end
+
+      it 'returns the average rating of all comments' do
+        expect(@product.average_rating).to eq 3
+      end
     end
 
-    it "returns the average rating of all comments" do
+    context "when product has no name" do
+      before do
+        @product = Product.create(:description => "This is a test bike")
+      end
 
-		expect(@product.average_rating).to eq (3)
-
-	end
-
-    it 'is not valid' do
-      expect(Product.new(description: "Nice bike")).not_to be_valid
+      it 'is an invalid product' do
+        expect(@product).not_to be_valid
+      end
     end
-
-  end
+end 
 
