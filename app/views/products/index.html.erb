@@ -2,7 +2,9 @@
 <h1>Products</h1>
 </div>
 <div class="container-fluid">
-	<div class="pages"><%= will_paginate @products %></div>
+	<div class="pages">
+		<%= will_paginate @products %>
+	</div>
   <div class="row">
     <%= render @products %>
   </div>
@@ -10,5 +12,4 @@
 
 <br>
 <p><%= link_to '///add product///', new_product_path %></p>
-
 
