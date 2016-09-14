@@ -1,3 +1,4 @@
+
 <h1>Products</h1>
 
 	<div class="row">
@@ -9,7 +10,7 @@
 		</div>
 
 		<div class="col-md-12">
-			<p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+			<p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>
 		</div>
 
 		<div class="col-md-12">
@@ -35,8 +36,11 @@
 		</div>
 
 		<div class="col-md-12">
-			<%= form_tag "/payments/create" do %>
-	  	<%= render partial: "shared/stripe_checkout_button" %>
+
+			<% if signed_in? %>
+				<%= form_tag "/payments/create" do %>
+		  	<%= render partial: "shared/stripe_checkout_button" %>
+				<% end %>
 			<% end %>
 		</div>
 
@@ -48,7 +52,7 @@
 		<div class="col-md-12">
 			<%= render partial:'comments' %> 
 		</div>
-		
+
 	<div class="pages"><%= will_paginate @comments %></div>
 	<div class="col-md-12">
 		<p>
@@ -57,6 +61,3 @@
 		</p>
 	</div>
 </div>
-
-<script
-
