@@ -4,12 +4,12 @@
       <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
 
       <ul>
-      <% product.errors.full_messages.each do |message| %>
+        <% product.errors.full_messages.each do |message| %>
         <li><%= message %></li>
-      <% end %>
+        <% end %>
       </ul>
     </div>
-  <% end %>
+<% end %>
 
   <div class="field">
     <%= f.label :name %>
