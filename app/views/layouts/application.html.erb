@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html>
+
   <head>
 
     <title>Nameofapp</title>
     <%= csrf_meta_tags %>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
 
   <body data-spy="scroll" data-target=".navbar" class="wrap"> <!-- so content won't get overlayed by the navbar --> 
-      <% if notice %>
-        <p id="notice" class="alert alert-info"><%= notice %></p>
-      <% end %>
-      <% if alert %>
-        <p id="alert" class="alert alert-info"><%= alert %></p>
-      <% end %>
+    <% if notice %>
+      <p id="notice" class="alert alert-info"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p id="alert" class="alert alert-info"><%= alert %></p>
+    <% end %>
 
 
-        <nav class="navbar navbar-inverse navbar-fixed" role="navigation">
-          <div class="navbar-header navbar-fixed-top">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
+    <nav class="navbar navbar-inverse navbar-fixed" role="navigation">
+      <div class="navbar-header navbar-fixed-top">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
             data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-        </div> <!-- END NAVBAR HEADER -->
+        </button>
+      </div> <!-- END NAVBAR HEADER -->
 
 
         <div class="navbar-collapse collapse center">
@@ -66,15 +65,11 @@
 
     <%= yield %>
 
-<footer class="footer">
-      <div class="container">
-        <p class="footercr">&copy; 2016 Bikes Berlin</p>
-      </div>
-</footer>
+    <footer class="footer">
+          <div class="container">
+            <p class="footercr">&copy; 2016 Bikes Berlin</p>
+          </div>
+    </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
- </body>
+  </body>
 </html>
