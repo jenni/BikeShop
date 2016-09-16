@@ -32,21 +32,16 @@
 		  	<%= render partial: "shared/stripe_checkout_button" %>
 				<% end %>
 			<% end %>
-</div>
 
-		<div class="col-md-12">
-			<%= render partial:'new_comment' %>
-		</div>
+		<%= render partial:'new_comment' %>
 
-		<div class="col-md-12">
-			<%= render partial:'comments' %> 
-		</div>
+		<%= render partial:'comments' %> 
 
 	<div class="pages"><%= will_paginate @comments %></div>
-	<div class="col-md-12">
+
 		<p>
 			<%= link_to 'Edit', edit_product_path(@product) %> |
 			<%= link_to 'Back', products_path %>
 		</p>
-	</div>
+</div>
 </div>
