@@ -16,8 +16,16 @@ body {
   overflow-x: hidden;
   margin-top: 40px;
   font-family: "Times New Roman", Times, serif;
-  font-size: 10px;
+  font-size: 11px;
 } 
+
+h1,h2,h3,h4,h5,h6,p {
+   line-height: 1.45;
+}
+
+h1 { font-size: 4em; }
+h2 { font-size: 3em; }
+h3 { font-size: 2em; }
 
 .alert-info {
   background-color: white;
@@ -61,19 +69,42 @@ a:hover {
   min-height: 100%;
 }
 
-.navbar {
+/** NAVBAR **/
 
+.navbar {
   display: inline-block;
- background-color: white;
- position: relative;
- width: 100%; 
- top: 0;
- z-index: 998;
- left: 0;
- margin-bottom: 0;
- margin-left: 0;
- text-align: center;
- border: none;
+  background-color: white;
+  position: relative;
+  width: 100%; 
+  top: 0;
+  z-index: 998;
+  left: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  text-align: center;
+  border: none;
+}
+
+.navbar ul {
+  display: inline-block;
+  list-style: none;
+}
+
+.navbar a {
+  -webkit-transition: color 600ms;
+}
+
+
+.navbar a:hover {
+ text-decoration: none;
+}
+
+.navbar ul li a {
+ text-decoration: none;
+ font-family: "Times New Roman", Times, serif;
+ font-size: 11px;
+ color: #333333;
+ text-transform: uppercase;
 }
 
 .nav-search {margin-top:12px;}
@@ -85,31 +116,16 @@ a:hover {
 */
 
 .navbar .navbar-nav {
-  float: right;
   vertical-align: top;
-  margin-right: 100px;
+  text-align: center;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: none;
 }
 
 .navbar .navbar-collapse {
   text-align: center;
-}
-
-.navbar a {
-  -webkit-transition: color 600ms;
-}
-
-
-.navbar a:hover {
- text-decoration: none;
- display: inline-block;
-}
-
-.navbar ul li a {
- text-decoration: none;
- font-family: "Times New Roman", Times, serif;
- font-size: 11px;
- color: #333333;
- text-transform: uppercase;
 }
 
 
@@ -127,7 +143,7 @@ border: none;
 background: white !important;
 }
 
-.navbar-header .navbar-toggle:hover { background: white; }
+/** .navbar-header .navbar-toggle:hover { background: white; } **/
 
 
 

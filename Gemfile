@@ -65,3 +65,6 @@ gem 'will_paginate'
 gem 'rails-controller-testing'
 
 gem 'stripe'
+
+gem 'flowtype-rails', '~> 1.1', '>= 1.1.1'
+

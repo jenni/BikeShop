@@ -27,7 +27,7 @@
     <% end %>
 
 
-    <nav class="navbar navbar-inverse navbar-fixed" role="navigation">
+    <nav class="navbar center navbar-inverse navbar-fixed" role="navigation">
       <div class="navbar-header navbar-fixed-top">
         <button type="button" class="navbar-toggle" data-toggle="collapse"
             data-target=".navbar-collapse">
@@ -54,7 +54,7 @@
             </li>
             <li class="hmenu">
               <% if user_signed_in? %>
-                <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                <%= link_to("Log out #{current_user.first_name}", destroy_user_session_path, :method => :delete) %>
             <% else %>
               <%= link_to('///Login///', new_user_session_path) %>
             <% end %>

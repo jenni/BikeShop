@@ -4,18 +4,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
 def index
-
-  if params[:q]
-    search_term = params[:q]
-    if (Rails.env == "production")
-      @products = Product.where("name ilike ?", "%#{search_term}%")
-    else
-      @products = Product.where("name LIKE ?", "%#{search_term}%")
-    end
-    else
-      @products = Product.all.paginate(:page => params[:page], :per_page => 3)
-    end
-
+  @products = find_products.paginate(:page => params[:page], :per_page => 3)
 end
 
 
@@ -78,6 +67,19 @@ end
     # Use callbacks to share common setup or constraints between actions.
     def set_product
       @product = Product.find(params[:id])
+    end
+
+    def find_products
+      if params[:q]
+        search_term = params[:q]
+        if (Rails.env == "production")
+          Product.where("name ilike ?", "%#{search_term}%")
+        else
+          Product.where("name LIKE ?", "%#{search_term}%")
+        end
+      else
+        Product.all
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

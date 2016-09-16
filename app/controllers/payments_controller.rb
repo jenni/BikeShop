@@ -1,4 +1,5 @@
 class PaymentsController < ApplicationController
+  before_action :authenticate_user!
 
 	def create
 		#declaring instance variable to find product by reading hidden field's params in the stripe checkout button form.
@@ -32,8 +33,11 @@ class PaymentsController < ApplicationController
 	      body = e.json_body
 	      err = body[:error]
 	      flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
-	      redirect_to product_path(@product)
     end
+
+    redirect_to static_pages_thanks_payment_path #redirects to product page
+
   end
+
 end
 

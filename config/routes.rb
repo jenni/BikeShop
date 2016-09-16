@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   end
   
   resources :users
+  
   post 'payments/create'
 
   get 'users' => 'users#index'
