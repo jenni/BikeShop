@@ -3,39 +3,27 @@
 
 	<div class="row">
 
-		<div class="col-md-12">
+	<div class="col-md-12">
 			<p>
 			  <%= image_tag(@product.image_url, class: "img-responsive") if @product.image_url %>
 			</p>
-		</div>
 
-		<div class="col-md-12">
 			<p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>
-		</div>
 
-		<div class="col-md-12">
 		  <p>
 		  	<strong>Name:</strong>
 		  	<%= @product.name %>
 			</p>
-		</div>	
 
-		<div class="col-md-12">
 			<p>
 			  <strong>Description:</strong>
 			  <%= @product.description %>
 			</p>
-		</div>
 
-
-		<div class="col-md-12">
 			<p>
 			  <strong>Price:</strong>
 			  <%= @product.price %> €
 			</p>
-		</div>
-
-		<div class="col-md-12">
 
 			<% if signed_in? %>
 				<%= form_tag "/payments/create" do %>
@@ -44,8 +32,7 @@
 		  	<%= render partial: "shared/stripe_checkout_button" %>
 				<% end %>
 			<% end %>
-		</div>
-
+</div>
 
 		<div class="col-md-12">
 			<%= render partial:'new_comment' %>
