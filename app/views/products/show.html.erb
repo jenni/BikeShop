@@ -1,47 +1,47 @@
 
 <h1>Products</h1>
 
-	<div class="row">
+<div class="row">
 
 	<div class="col-md-12">
-			<p>
-			  <%= image_tag(@product.image_url, class: "img-responsive") if @product.image_url %>
-			</p>
+		<p>
+			<%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: @product.image_url) if @product.image_url %>
+		</p>
 
-			<p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>
+		<p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>
 
-		  <p>
-		  	<strong>Name:</strong>
-		  	<%= @product.name %>
-			</p>
+		<p>
+			<strong>Name:</strong>
+			<%= @product.name %>
+		</p>
 
-			<p>
-			  <strong>Description:</strong>
-			  <%= @product.description %>
-			</p>
+		<p>
+			<strong>Description:</strong>
+			<%= @product.description %>
+		</p>
 
-			<p>
-			  <strong>Price:</strong>
-			  <%= @product.price %> €
-			</p>
+		<p>
+			<strong>Price:</strong>
+			<%= @product.price %> €
+		</p>
 
-			<% if signed_in? %>
-				<%= form_tag "/payments/create" do %>
-				<!-- (params[:product_id]) < payments_controller // product_id accessible: this enables payments controller to access product -->
-				<%= hidden_field_tag(:product_id, @product.id) %>
-		  	<%= render partial: "shared/stripe_checkout_button" %>
-				<% end %>
-			<% end %>
+		<% if signed_in? %>
+		<%= form_tag "/payments/create" do %>
+		<!-- (params[:product_id]) < payments_controller // product_id accessible: this enables payments controller to access product -->
+		<%= hidden_field_tag(:product_id, @product.id) %>
+		<%= render partial: "shared/stripe_checkout_button" %>
+		<% end %>
+		<% end %>
 
 		<%= render partial:'new_comment' %>
 
-		<%= render partial:'comments' %> 
+		<%= render partial:'comments' %>
 
-	<div class="pages"><%= will_paginate @comments %></div>
+		<div class="pages"><%= will_paginate @comments %></div>
 
 		<p>
 			<%= link_to 'Edit', edit_product_path(@product) %> |
 			<%= link_to 'Back', products_path %>
 		</p>
-</div>
+	</div>
 </div>
