@@ -7,6 +7,7 @@ class CommentsController < ApplicationController
       respond_to do |format|
         if @comment.save
           format.html { redirect_to @product, notice: 'Review was created successfully.' }
+					format.js
           format.json { render :show, status: :created, location: @product }
         else
         format.html { redirect_to @product, alert: 'Review was not saved successfully.' }
