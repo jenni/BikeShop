@@ -6,10 +6,11 @@
 	<div class="pages">
 		<%= will_paginate @products %>
 	</div>
-  	
+
   <div class="row">
+		<% cache(cache_key_for_products) do %>
     <%= render @products %>
+		<% end %>
   </div>
 </div>
 <p><%= link_to '///add product///', new_product_path %></p>
-

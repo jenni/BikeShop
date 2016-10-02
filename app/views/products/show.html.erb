@@ -10,6 +10,7 @@
 
 		<p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>
 
+		<% cache @product do %>
 		<p>
 			<strong>Name:</strong>
 			<%= @product.name %>
@@ -24,6 +25,7 @@
 			<strong>Price:</strong>
 			<%= @product.price %> €
 		</p>
+		<%end %>
 
 		<% if signed_in? %>
 		<%= form_tag "/payments/create" do %>
