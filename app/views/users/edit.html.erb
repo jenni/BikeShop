@@ -1,8 +1,12 @@
-<h1>Editing User</h1>
+<div class="headers">
+<h1>Editing user</h1>
+</div>
 
+<div class="form">
 <%= render 'form' %>
+</div>
 
-<div class="col-sm-6 col-md-4">	
+<div class="col-sm-6 col-md-4">
 	<%= link_to ('<span class="glyphicon glyphicon-arrow-left"></span>').html_safe, users_path %> |
-	<%= link_to 'Show', @user, class:"btn btn-default btn-xs" %> 
+	<%= link_to 'Show', @user, class:"btn btn-default btn-xs" %>
 </div>
