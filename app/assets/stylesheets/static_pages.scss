@@ -162,19 +162,6 @@ font-family: "Times New Roman";
 /** .navbar-header .navbar-toggle:hover { background: white; } **/
 
 
-.logo a {
-  color: grey;
-  text-decoration: none;
-  -webkit-transition: color 600ms;
-  margin-left: 100px;
-}
-
-.logo a:hover {
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-}
-
 /** deleting arrows **/
 .right.carousel-control, .left.carousel-control {
   opacity: 0;
@@ -232,4 +219,9 @@ font-family: "Times New Roman";
 
 .footercr {
   margin-top: 20px;
+}
+
+#click {
+  color: #956cae;
+  text-decoration: underline;
 }
