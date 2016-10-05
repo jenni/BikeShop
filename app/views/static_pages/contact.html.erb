@@ -1,10 +1,10 @@
 <div class="headers">
-<h1>Contact Us</h1>
+  <h1>Contact Me</h1>
 </div>
 
 <%= flash[:notice] %>
 <div class="form">
-<%= form_tag("/static_pages/thank_you") do %>
+  <%= form_tag("/static_pages/thank_you") do %>
   <div class="row">
     <div class="col-md-12 m-t">
       <div class="form-group">
@@ -19,8 +19,8 @@
         <%= label_tag :message %>
         <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
       </div>
+    </div>
   </div>
-</div>
-<%= submit_tag "Send" %>
-<% end %>
+  <%= submit_tag "Send" %>
+  <% end %>
 </div>

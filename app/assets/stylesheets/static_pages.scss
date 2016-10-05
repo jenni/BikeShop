@@ -17,12 +17,21 @@ body {
   margin-top: 40px;
   font-family: 'Alegreya Sans SC', "Times New Roman", Times, serif;
   font-size: 11px;
+  text-align: center;
 }
 
 .top-bar {margin-top: 10px;
 text-align: center;}
 
-.logo {height: 25px;}
+.logo {
+  height: 25px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .logo {display:none;}
+    .top-bar {display: none;}
+}
 
 .row { text-align: center; }
 
@@ -100,6 +109,7 @@ a:hover {
 .navbar-nav {
   float: none;
 }
+
 .navbar ul {
   display: inline-block;
   list-style: none;
@@ -200,6 +210,10 @@ font-family: "Times New Roman";
 .form-control {
   text-transform: uppercase;
   font-size: 11px;}
+
+.new-user {
+  width: 100%;
+}
 
 
 
