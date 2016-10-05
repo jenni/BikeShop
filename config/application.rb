@@ -23,3 +23,4 @@ module Nameofapp
     # -- all .rb files in that directory are automatically loaded.
     config.cache_store = :redis_store
 end
+end
