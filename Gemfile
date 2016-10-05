@@ -68,3 +68,4 @@ gem 'stripe'
 
 gem 'flowtype-rails', '~> 1.1', '>= 1.1.1'
 
+gem 'redis-rails'

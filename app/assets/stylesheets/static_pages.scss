@@ -19,6 +19,12 @@ body {
   font-size: 11px;
 }
 
+.top-bar {margin-top: 10px;
+text-align: center;}
+
+.logo {height: 25px;}
+
+
 h1,h2,h3,h4,h5,h6,p {
   line-height: 1.45;
 }
@@ -81,6 +87,8 @@ a:hover {
 /** NAVBAR **/
 
 .navbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: inline-block;
   background-color: white;
   position: relative;
@@ -88,12 +96,15 @@ a:hover {
   top: 0;
   z-index: 998;
   left: 0;
-  margin-bottom: 0;
   margin-left: 0;
-  text-align: center;
   border: none;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
 }
 
+.navbar-nav {
+  float: none;
+}
 .navbar ul {
   display: inline-block;
   list-style: none;
@@ -107,6 +118,7 @@ a:hover {
 .navbar a:hover {
   text-decoration: none;
 }
+
 
 .navbar ul li a {
   text-decoration: none;

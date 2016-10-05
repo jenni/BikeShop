@@ -29,9 +29,8 @@
   <% if alert %>
   <p id="alert" class="alert alert-info"><%= alert %></p>
   <% end %>
-
-
-  <nav class="navbar center navbar-inverse navbar-fixed" role="navigation">
+<div class="top-bar"><%= image_tag("bicis.jpg", :alt => "bicislogo", class:"logo") %></div>
+  <nav class="navbar navbar-inverse navbar-fixed" role="navigation">
     <div class="navbar-header navbar-fixed-top">
       <button type="button" class="navbar-toggle" data-toggle="collapse"
       data-target=".navbar-collapse">
@@ -45,8 +44,7 @@
 
   <div class="navbar-collapse collapse center">
     <ul class="nav navbar-nav">
-      <li><a href="#">⏄</a></li>
-      <li><%= link_to "home", root_url %> </li>
+      <li><%= link_to "home", root_url %></li>
       <li><%= link_to "Products", products_path %></li>
       <li> <%= link_to "About", '/static_pages/about' %> </li>
       <li><%= link_to "Contact", '/static_pages/contact' %></li>
