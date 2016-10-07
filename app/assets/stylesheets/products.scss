@@ -12,9 +12,9 @@ body {
   margin-left: 100px;
 }
 
-table { margin: 30px; }
+/* table { margin: 30px; }*/
 
-p { margin: 30px;}
+/* p { margin: 30px;} */
 
 h1 { padding: 10px;}
 
@@ -25,9 +25,7 @@ text-align: center;
 margin-top: -50px;
 }
 
-.edit_product {
-  margin-top: 30px;
-}
+.edit_product { margin-top: 30px; }
 
 .new_product {
   margin-top: 30px;
@@ -50,3 +48,5 @@ margin-top: -50px;
 	position: relative;
 	left: 45%;
 }
+
+.links {color: black;}

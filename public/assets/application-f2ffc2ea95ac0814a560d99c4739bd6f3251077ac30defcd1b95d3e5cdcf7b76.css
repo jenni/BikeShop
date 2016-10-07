@@ -221,7 +221,7 @@ body {
   position: relative;
   overflow-x: hidden;
   margin-top: 40px;
-  font-family: 'Alegreya Sans SC', "Times New Roman", Times, serif;
+  font-family: 'Alegreya Sans SC', 'Alegreya Sans SC', Times, serif;
   font-size: 11px;
 }
 
@@ -264,8 +264,8 @@ body {
 /* line 45, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
 h1 {
   text-align: center;
-  font-family: 'Alegreya Sans SC', "Times New Roman", Times, serif;
-  color: #00b6b4;
+  font-family: 'Alegreya Sans SC', 'Alegreya Sans SC', Times, serif;
+  color: #a1cee3;
   text-transform: uppercase;
   margin: auto;
   font-size: 13px;
@@ -274,7 +274,7 @@ h1 {
 
 /* line 55, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
 h2 {
-  font-family: "Times New Roman", "Courier New", Courier, monospace;
+  font-family: 'Alegreya Sans SC', "Courier New", Courier, monospace;
   color: black;
   text-align: center;
   font-size: 11px;
@@ -283,7 +283,7 @@ h2 {
 
 /* line 63, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
 p {
-  font-family: "Times New Roman", "Courier New", Courier, monospace;
+  font-family: 'Alegreya Sans SC', "Courier New", Courier, monospace;
   color: grey;
   text-align: center;
   font-size: 10px;
@@ -345,7 +345,7 @@ a:hover {
 /* line 118, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
 .navbar ul li a {
   text-decoration: none;
-  font-family: 'Alegreya Sans SC', "Times New Roman", Times, serif;
+  font-family: 'Alegreya Sans SC', 'Alegreya Sans SC', Times, serif;
   font-size: 13px;
   font-weight: 300;
   color: #333333;
@@ -359,7 +359,7 @@ a:hover {
 
 /*
 .button-s {
-font-family: "Times New Roman";
+font-family: 'Alegreya Sans SC';
 }
 */
 /* line 135, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
@@ -431,7 +431,7 @@ font-family: "Times New Roman";
 .form-group {
   text-transform: uppercase;
   color: #a1cee3;
-  font-family: 'Alegreya Sans SC', "Times New Roman", Courier, monospace;
+  font-family: 'Alegreya Sans SC', 'Alegreya Sans SC', Courier, monospace;
   font-weight: 100;
   background-color: white;
   border: none;

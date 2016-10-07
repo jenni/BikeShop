@@ -211,7 +211,7 @@ body {
   position: relative;
   overflow-x: hidden;
   margin-top: 40px;
-  font-family: 'Alegreya Sans SC', "Times New Roman", Times, serif;
+  font-family: 'Alegreya Sans SC', 'Alegreya Sans SC', Times, serif;
   font-size: 11px;
 }
 
@@ -268,7 +268,7 @@ h3 {
 /* line 51, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
 h1 {
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Alegreya Sans SC', Times, serif;
   font-size: 11px;
   color: #333333;
   text-transform: uppercase;
@@ -277,7 +277,7 @@ h1 {
 
 /* line 60, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
 h2 {
-  font-family: "Times New Roman", "Courier New", Courier, monospace;
+  font-family: 'Alegreya Sans SC', "Courier New", Courier, monospace;
   color: black;
   text-align: center;
   font-size: 11px;
@@ -286,7 +286,7 @@ h2 {
 
 /* line 68, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
 p {
-  font-family: "Times New Roman", "Courier New", Courier, monospace;
+  font-family: 'Alegreya Sans SC', "Courier New", Courier, monospace;
   color: grey;
   text-align: center;
   font-size: 10px;
@@ -348,7 +348,7 @@ a:hover {
 /* line 123, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
 .navbar ul li a {
   text-decoration: none;
-  font-family: 'Alegreya Sans SC', "Times New Roman", Times, serif;
+  font-family: 'Alegreya Sans SC', 'Alegreya Sans SC', Times, serif;
   font-size: 13px;
   font-weight: 300;
   color: #333333;
@@ -362,7 +362,7 @@ a:hover {
 
 /*
 .button-s {
-font-family: "Times New Roman";
+font-family: 'Alegreya Sans SC';
 }
 */
 /* line 140, /Users/Jen/nameofapp/app/assets/stylesheets/static_pages.scss */
@@ -449,7 +449,7 @@ font-family: "Times New Roman";
 .form-group {
   text-transform: uppercase;
   color: #a1cee3;
-  font-family: 'Alegreya Sans SC', "Times New Roman", Courier, monospace;
+  font-family: 'Alegreya Sans SC', 'Alegreya Sans SC', Courier, monospace;
   font-weight: 100;
   background-color: white;
   border: none;

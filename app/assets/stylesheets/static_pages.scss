@@ -15,10 +15,13 @@ body {
   position: relative;
   overflow-x: hidden;
   margin-top: 40px;
-  font-family: 'Alegreya Sans SC', "Times New Roman", Times, serif;
+  font-family: 'Alegreya Sans SC', 'Alegreya Sans SC', Times, serif;
+  text-transform: uppercase;
   font-size: 11px;
   text-align: center;
 }
+
+.links {color: #ffa5d2;}
 
 .top-bar {margin-top: 10px;
 text-align: center;}
@@ -51,10 +54,11 @@ text-align: center;}
   border-bottom: 1px solid #d7d7d7;
   margin-bottom: 10px;
 }
+
 h1 {
   text-align: center;
-  font-family: 'Alegreya Sans SC', "Times New Roman", Times, serif;
-  color: #00b6b4;
+  font-family: 'Alegreya Sans SC', 'Alegreya Sans SC', Times, serif;
+  color: #0ACED8;
   text-transform: uppercase;
   margin: auto;
   font-size: 13px;
@@ -62,7 +66,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Times New Roman", "Courier New", Courier, monospace;
+  font-family: 'Alegreya Sans SC', "Courier New", Courier, monospace;
   color: black;
   text-align: center;
   font-size: 11px;
@@ -70,7 +74,7 @@ h2 {
 }
 
 p {
-  font-family: "Times New Roman", "Courier New", Courier, monospace;
+  font-family: 'Alegreya Sans SC', "Courier New", Courier, monospace;
   color: grey;
   text-align: center;
   font-size: 10px;
@@ -127,7 +131,7 @@ a:hover {
 
 .navbar ul li a {
   text-decoration: none;
-  font-family: 'Alegreya Sans SC', "Times New Roman", Times, serif;
+  font-family: 'Alegreya Sans SC', 'Alegreya Sans SC', Times, serif;
   font-size: 13px;
   font-weight: 300;
   color: #333333;
@@ -138,7 +142,7 @@ a:hover {
 
 /*
 .button-s {
-font-family: "Times New Roman";
+font-family: 'Alegreya Sans SC';
 }
 */
 
@@ -199,7 +203,7 @@ font-family: "Times New Roman";
 .form-group {
   text-transform: uppercase;
   color: #a1cee3;
-  font-family: 'Alegreya Sans SC', "Times New Roman", Courier, monospace;
+  font-family: 'Alegreya Sans SC', 'Alegreya Sans SC', Courier, monospace;
   font-weight: 100;
   background-color: white;
   border: none;
@@ -223,8 +227,6 @@ font-family: "Times New Roman";
   width: 100%;
   height: 50px;
   color: grey;
-  font-family: 'Alegreya Sans SC', "Courier New", Courier, monospace;
-  font-size: 10px;
   margin-top: 10px;
   margin-bottom: 50px;
   border-top: 1px solid #d7d7d7;
