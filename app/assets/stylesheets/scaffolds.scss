@@ -10,7 +10,7 @@ p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  padding: 10px;
+  margin: 33px;
 }
 
 pre {
@@ -27,8 +27,8 @@ a {
   }
 
   &:hover {
-    color: black;
-    background-color: #F453B6;
+    color: #fff;
+    background-color: #000;
   }
 }
 
@@ -68,13 +68,13 @@ div {
 
   h2 {
     text-align: left;
-    font-weight: strong;
+    font-weight: bold;
     padding: 5px 5px 5px 15px;
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0;
     background-color: #c00;
-    color: #ffa5d2;
+    color: #fff;
   }
 
   ul li {
